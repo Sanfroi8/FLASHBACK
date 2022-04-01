@@ -1,13 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Souvenirs</h1>
+<p> COLLECTION <p>
 
-<div id="souvenirs">
+<div id="souvenirs" class="row">
   <% @souvenirs.each do |souvenir| %>
-    <%= render souvenir %>
-    <p>
-      <%= link_to "Show this souvenir", souvenir %>
-    </p>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h2><%= souvenir.title%></h2>
+          <%= link_to "Show this souvenir", souvenir, class: 'btn btn-primary btn-sm stretched-link' %>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>
 

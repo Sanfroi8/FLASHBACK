@@ -1,6 +1,13 @@
+<h1><%= @souvenir.title %></h1>
+
+<p> <%= @souvenir.feeling %></p>
+<p> <%= @souvenir.timemarker %></p>
+
+<p class="lead"><%= @souvenir.description %></p>
+
 <p style="color: green"><%= notice %></p>
 
-<%= render @souvenir %>
+<%= render @souvenir %> <%# C'EST DU RUBY %>
 
 <div>
   <%= link_to "Edit this souvenir", edit_souvenir_path(@souvenir) %> |
