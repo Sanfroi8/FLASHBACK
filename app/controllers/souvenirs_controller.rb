@@ -65,6 +65,6 @@ class SouvenirsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def souvenir_params
-      params.require(:souvenir).permit(:title, :timemarker, :feeling, :description)
+      params.require(:souvenir).permit(:title, :timemarker, :feeling, :description, :user_id)
     end
 end

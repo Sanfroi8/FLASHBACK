@@ -1,0 +1,8 @@
+<%=@user.email%>
+<% @user.souvenirs.each do |souvenir| %>
+<%= souvenir.title%>
+<%= souvenir.timemarker%>
+<%= souvenir.feeling%>
+<%= souvenir.description%>
+
+<%end%>
